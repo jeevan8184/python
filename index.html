@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class=" form">
+        <div class=" inside">
+            <h1 class="title">Students Information Form</h1>
+            <div class="c1">
+                <input placeholder="Enter your name" class="input" id="name" type="text"  name="name" required />
+                <input placeholder="rollno" class="input" type="number" id="rollno" name="rollno" required />
+            </div>
+            <div class="input">
+                <select title="title" name="class" id="branch" class="select" >
+                    <option value="AIML">AIML</option>
+                    <option value="CSE">CSE</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="IT">IT</option>
+                    <option value="MECH">MECH</option>
+                </select>
+            </div>
+            <input class="input" placeholder="section" type="text" name="section" id="section" />
+            <input class="input" placeholder="hobbies" type="text" name="hobbies" id="hobbies" />
+            <input class="input" placeholder="friends" type="text" name="friends" id="friends" />
+
+            <div class="btns">
+                <button class="cancel" onclick="cancelFunction()">cancel</button>
+                <button class="btn1" id="btn1" onclick="setStudent()">Submit</button>
+            </div>
+        </div>
+        <div class="display" id="display"></div>
+        <div class="get" id="get"></div>
+    </div>
+
+    <script src="script.js" />
+</body>
+</html>
+
